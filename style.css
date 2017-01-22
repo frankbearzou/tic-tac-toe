@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Architects Daughter';
+  src: url("https://fonts.gstatic.com/s/architectsdaughter/v6/RXTgOOQ9AAtaVOHxx0IUBBoTIN0je7AiOLXaVBr1ByU.woff2") format("woff2"); }
+.main {
+  text-align: center;
+  font-family: 'Architects Daughter', Helvetica, sans-serif; }
+  .main .board-outer {
+    background-color: #CC9900;
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%); }
+    .main .board-outer .title {
+      text-align: left;
+      margin-left: 20px; }
+    .main .board-outer .board-inner {
+      height: 400px;
+      background-color: darkgreen;
+      background: radial-gradient(circle, black, darkgreen);
+      color: white; }
+      .main .board-outer .board-inner .selection-menu {
+        font-size: 3em;
+        padding: 10px;
+        text-align: center; }
+        .main .board-outer .board-inner .selection-menu button {
+          background-color: Transparent;
+          background-repeat: no-repeat;
+          border: none;
+          cursor: pointer;
+          overflow: hidden;
+          outline: none; }
+        .main .board-outer .board-inner .selection-menu .title {
+          text-align: center; }
+      .main .board-outer .board-inner .game {
+        font-size: 3em;
+        position: relative;
+        height: 380px; }
+        .main .board-outer .board-inner .game ul {
+          list-style-type: none;
+          position: relative;
+          padding-top: 15px;
+          height: 100%; }
+          .main .board-outer .board-inner .game ul li {
+            position: relative;
+            float: left;
+            border: solid white 1px;
+            margin: 0;
+            height: 30%;
+            width: 30%;
+            display: table; }
+            .main .board-outer .board-inner .game ul li .piece {
+              display: table-cell;
+              vertical-align: middle; }
+      .main .board-outer .board-inner .overlay {
+        display: none;
+        position: absolute;
+        width: 400px;
+        height: 380px;
+        background-color: gray;
+        top: 20px;
+        left: 0px;
+        opacity: .8; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Architects Daughter';
+  src: url('https://fonts.gstatic.com/s/architectsdaughter/v6/RXTgOOQ9AAtaVOHxx0IUBBoTIN0je7AiOLXaVBr1ByU.woff2') format('woff2');
+}
+
+$height: 400px;
+$top-banner-height: 20px;
+
+.main {
+  text-align: center;
+
+  font-family: 'Architects Daughter', Helvetica, sans-serif;
+  .board-outer {
+    background-color: #CC9900;
+    height: $height;
+    width: $height;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+
+    .title {
+      text-align: left;
+      margin-left: 20px;
+    }
+
+
+    .board-inner {
+      height: $height;// - $top-banner-height;
+      //margin-top: $top-banner-height;
+      background-color: darkgreen;
+      background: radial-gradient(circle, black, darkgreen);
+
+      color: white;
+
+
+
+      .selection-menu {
+
+        font-size: 3em;
+        padding: 10px;
+        text-align: center;
+        //margin-top: $top-banner-height;
+        //margin: 20px;
+
+        button {
+          background-color: Transparent;
+          background-repeat:no-repeat;
+          border: none;
+          cursor:pointer;
+          overflow: hidden;
+          outline:none;
+        }
+
+        .title {
+          text-align: center;
+        }
+      }
+
+      .game {
+        font-size: 3em;
+        position: relative;
+        //margin-top: 10px;
+        //padding-top: 20px;
+        height: $height - $top-banner-height;
+
+        ul  {
+          list-style-type: none;
+          position: relative;
+          //margin-top: 10px;
+          padding-top: 15px;
+          height: 100%;
+
+          li {
+            //display: inline-block;
+            position: relative;
+            float: left;
+            border: solid white 1px;
+
+            margin: 0;
+            height: 30%;
+            width: 30%;
+
+            display: table;
+            //width:100%;
+
+            .piece {
+              display: table-cell;
+              vertical-align: middle;
+            }
+          }
+        }
+
+      }
+
+      .overlay {
+        display:none;
+        position: absolute;
+        width:$height;
+        height:$height - $top-banner-height;
+        background-color: gray;
+        top: $top-banner-height;
+        left: 0px;
+        //padding: 10px;
+        opacity: .8;
+      }
+    }
+  }
+
+
+}

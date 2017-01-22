@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container text-center main">
+        <div class="board-outer">
+            <div class="title" style="display: none">
+                <span class="XO"></span>
+                <span class="msg"></span>
+            </div>
+            <div class="board-inner">
+                <div class="selection-menu">
+                    <div class="row"><p class="title">Would you like to be X or O?</p></div>
+                    <div class="row">
+                        <button class="hvr-buzz-out selxo">X</button>
+                        <button class="hvr-buzz-out selxo">O</button>
+                    </div>
+                </div>
+                <div class="game" style="display: none">
+                    <ul>
+                        <li><span class="piece"></span></li>
+                        <li><span class="piece"></span></li>
+                        <li><span class="piece"></span></li>
+                        <li><span class="piece"></span></li>
+                        <li><span class="piece"></span></li>
+                        <li><span class="piece"></span></li>
+                        <li><span class="piece"></span></li>
+                        <li><span class="piece"></span></li>
+                        <li><span class="piece"></span></li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
